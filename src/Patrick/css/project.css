@@ -1,0 +1,39 @@
+.single-project {
+  background: rgb(86, 160, 245);
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.3rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  transition: background-color 0.2s;
+}
+.single-project h1 {
+  font-family: var(--font-gen);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.single-project i {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.project-title {
+  padding: 25px;
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+.single-project i:hover {
+  color: rgb(207, 240, 238);
+}
+
+@media screen and (max-width: 760px) {
+  .single-project {
+    margin-right: 0px;
+  }
+}

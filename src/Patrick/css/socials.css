@@ -1,0 +1,20 @@
+.socials {
+  color: var(--text-primary);
+}
+.socials a {
+  font-size: 30px;
+  margin: 15px;
+  color: var(--text-primary);
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+  transition: 0.1s;
+}
+.socials a:hover {
+  cursor: pointer;
+  color: var(--loader-bg);
+}
+
+.A {
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+}

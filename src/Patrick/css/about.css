@@ -1,0 +1,34 @@
+* About section */ .about-image {
+  height: 500px;
+}
+.about-image-text h1 {
+  padding: 10px 15px;
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+}
+.about-section {
+  margin-bottom: 200px;
+}
+
+.about-image-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.contact {
+  padding: 1.4rem;
+}
+
+.about-image-text {
+  text-align: justify;
+  padding: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: var(--font-weight-p);
+  font-style: italic;
+}
+.about-btn {
+  padding: 8px 15px;
+}
+
+/* // about section end */

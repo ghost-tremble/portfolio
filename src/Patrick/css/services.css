@@ -1,0 +1,60 @@
+.services-container {
+  margin-bottom: 200px;
+  color: rgb(70, 86, 228);
+}
+
+.service-title {
+  padding: 25px;
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+.service-content {
+}
+
+.service-content > h2 {
+  font-size: 1.1rem;
+  font-family: var(--font-gen);
+  font-weight: 400;
+  display: inline;
+  color: #000;
+}
+
+.service {
+  background-color: #ffffff;
+  display: flex;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 350px;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-right: 1.3rem;
+  margin-bottom: 20px;
+  padding: 1.4rem;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+i {
+  transition: 0.2s;
+}
+.service:hover i {
+  transform: translateX(5px);
+}
+
+.view-modal-btn {
+  display: inline-flex;
+  margin-top: auto;
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.service-icon {
+  padding: 10px;
+  text-align: center;
+}

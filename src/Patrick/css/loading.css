@@ -1,0 +1,78 @@
+.logo {
+  position: fixed;
+  z-index: 7;
+  width: 100vw;
+  height: 100vh;
+
+  margin-top: 0;
+  background-color: #deecff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  top: 0;
+}
+
+.logo svg {
+  animation: fill 4s ease forwards 3s;
+  width: 80%;
+  height: 122px;
+}
+/* //const logo = document.querySelectorAll('mask path')
+for(let i = 0; i<logo.lenghth; i++){
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()`)
+/* } */
+/* //patrick */
+.logo path:nth-child(1) {
+  stroke-dasharray: 450px;
+  stroke-dashoffset: 450px;
+  animation: loader 2s ease-in forwards 0.9s;
+}
+.logo path:nth-child(2) {
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation: loader 2s ease forwards 1.3s;
+}
+.logo path:nth-child(3) {
+  stroke-dasharray: 315px;
+  stroke-dashoffset: 315px;
+  animation: loader 2s ease forwards 1.5s;
+}
+.logo path:nth-child(4) {
+  stroke-dasharray: 246px;
+  stroke-dashoffset: 246px;
+  animation: loader 2s ease forwards 1.8s;
+}
+.logo path:nth-child(5) {
+  stroke-dasharray: 240px;
+  stroke-dashoffset: 240px;
+  animation: loader 2s ease forwards 2.2s;
+}
+.logo path:nth-child(6) {
+  stroke-dasharray: 399px;
+  stroke-dashoffset: 399px;
+  animation: loader 2s ease forwards 2.4s;
+}
+.logo path:nth-child(7) {
+  stroke-dasharray: 468px;
+  stroke-dashoffset: 468px;
+  animation: loader 2s ease forwards 2.6s;
+}
+
+@keyframes loader {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #11324d;
+  }
+}

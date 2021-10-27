@@ -1,0 +1,75 @@
+.modal-main {
+  position: fixed;
+  z-index: 7;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  top: 0;
+  visibility: 0;
+}
+.modal-main-show {
+  visibility: 1;
+}
+
+.modal-container {
+  border-radius: 6px;
+  height: max-content;
+  width: 700px;
+  color: rgb(55, 130, 216);
+  display: flex;
+  flex-direction: column;
+  transform: scale(0);
+  background-color: #ffffff;
+  transition-timing-function: linear;
+}
+.modal-scale {
+  transform: scale(1);
+}
+
+.cancel-modal {
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.cancel-modal:hover {
+  color: rgb(20, 91, 150);
+  transform: rotate(145deg);
+}
+.modal-con {
+  font-size: 0.7rem;
+}
+.modal-con h1 {
+  font-weight: 400;
+  color: red;
+}
+.content-modal {
+  padding: 2rem 1.5rem;
+  height: 100%;
+  font-size: smaller;
+}
+.content-modal ul {
+  font-size: 20px;
+}
+.content-modal li {
+  padding: 10px;
+  font-size: larger;
+}
+
+@media screen and (max-width: 760px) {
+  .modal-container {
+    width: 80%;
+  }
+}

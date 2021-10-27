@@ -1,0 +1,146 @@
+/* Nabar css module */
+/* Navbar menu icon */
+.center {
+  width: 50px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #11324d;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 2px;
+  margin: 7px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.center-click:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.center-click:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.center-click div {
+  transform: scale(0);
+  background-color: brown;
+}
+
+.show-nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.container-nav {
+  background-color: "black";
+  padding: "10px";
+  width: "70px";
+  height: "70px";
+  margin-right: "25px";
+  border-radius: "50%";
+}
+
+.nav-header button {
+  display: none;
+}
+.nav {
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1.4em;
+}
+
+.nav-header h1 {
+  font-size: 40px;
+  color: #11324d;
+  font-family: logo;
+  padding: 30px;
+}
+.nav-header button {
+  display: block;
+}
+.link1 {
+  display: none;
+}
+.link2 {
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+
+  position: fixed;
+  z-index: 2;
+
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden;
+}
+.overlay-show {
+  transform: scale(1);
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.overlay-reverse {
+  transform: scale(0);
+  transition-duration: 1s;
+}
+
+.overlay ul {
+  top: 10%;
+  position: relative;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  vertical-align: center;
+  list-style: none;
+}
+.overlay ul li {
+  width: 100%;
+  color: #062d55;
+  transition: 0.5s;
+}
+.overlay ul li:hover {
+  cursor: pointer;
+  background-color: #96baff;
+}
+.overlay ul li a {
+  display: block;
+  font-family: var(--name-font);
+  font-weight: var(--font-bold);
+  width: 100;
+  text-decoration: none;
+  font-size: 2.7rem;
+  padding: 1.2rem;
+  transition: 0.4s;
+}
+
+.overlay ul li a:hover {
+  transform: translateY(-3px);
+}
+
+/* falling animation */
+.falling-container {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.falling {
+  width: 25%;
+  background-color: #deecff;
+  height: 0px;
+}

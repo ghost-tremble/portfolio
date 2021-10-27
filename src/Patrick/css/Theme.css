@@ -1,0 +1,21 @@
+@font-face {
+  font-family: logo;
+  src: url(../fonts/ColinasPersonalUseRegular-2OBe3.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap");
+
+:root {
+  /* colors */
+  --primary-bg: #ffffff;
+  --general-bg: #6f9ad4;
+  --loader-bg: #6f9ad4;
+  --text-primary: #11324d;
+
+  /* fonts */
+  /* font-family */
+  --name-font: "Major Mono Display", monospace;
+  --font-gen: "Poppins", sans-serif;
+  --font-weight-p: 300;
+  --font-bold: 700;
+}
